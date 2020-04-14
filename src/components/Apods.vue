@@ -1,5 +1,5 @@
 <template>
-  <div class="apod col-6">
+  <div class="col-12">
     <h5>{{data.date}}</h5>
     <img :src="data.hdurl" />
     <small>{{data.explanation}}</small>
@@ -8,13 +8,15 @@
 </template>
 
 <script>
+import Apod from "./Apod.vue";
 export default {
+  name: "apod",
   data() {
     return {};
   },
   computed: {
-    apod() {
-      return this.$store.state.apod;
+    apods() {
+      return this.$store.state.apods;
     }
   }
 };
