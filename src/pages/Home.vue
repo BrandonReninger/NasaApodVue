@@ -1,17 +1,16 @@
 <template>
   <div class="home container-fluid">
     <!--Nasa Apod-->
+    <div class="row"></div>
+    <apod></apod>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Apod from "../components/Apod.vue";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: { Apod }
 };
 </script>
