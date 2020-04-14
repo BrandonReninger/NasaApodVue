@@ -1,9 +1,9 @@
 <template>
   <div class="apod col-6">
-    <h5>{{data.date}}</h5>
-    <img :src="data.hdurl" />
-    <small>{{data.explanation}}</small>
-    <h3>{{data.title}}</h3>
+    <h5>{{apod.date}}</h5>
+    <img class="img-fluid" :src="apod.hdurl" />
+    <small>{{apod.explanation}}</small>
+    <h3>{{apod.title}}</h3>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   },
   computed: {
     apod() {
-      return this.$store.state.apod;
+      return this.$store.state.apods;
     }
   }
 };

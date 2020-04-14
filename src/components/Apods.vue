@@ -1,16 +1,13 @@
 <template>
   <div class="col-12">
-    <h5>{{data.date}}</h5>
-    <img :src="data.hdurl" />
-    <small>{{data.explanation}}</small>
-    <h3>{{data.title}}</h3>
+    <apod></apod>
   </div>
 </template>
 
 <script>
 import Apod from "./Apod.vue";
 export default {
-  name: "apod",
+  name: "apods",
   data() {
     return {};
   },
@@ -18,6 +15,12 @@ export default {
     apods() {
       return this.$store.state.apods;
     }
+  },
+  created() {
+    return this.$store.dispatch("getApods");
+  },
+  components: {
+    Apod
   }
 };
 </script>
