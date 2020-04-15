@@ -1,5 +1,5 @@
 <template>
-  <div class="apod col-6">
+  <div class="apod col-12">
     <h5>{{apod.date}}</h5>
     <img class="img-fluid" :src="apod.hdurl" />
     <small>{{apod.explanation}}</small>

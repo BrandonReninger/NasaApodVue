@@ -1,7 +1,7 @@
 <template>
-  <div class="apod col-6">
+  <div class="photo col-4">
     <img class="img-fluid" :src="photoData.image" />
-    <small>{{apod.caption}}</small>
+    <small>{{photoData.caption}}</small>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-.apod {
+.photo {
   outline: 1px solid black;
 }
 </style>

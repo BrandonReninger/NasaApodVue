@@ -26,7 +26,4 @@ export default {
 </script>
 
 <style>
-.apod {
-  outline: 1px solid black;
-}
 </style>

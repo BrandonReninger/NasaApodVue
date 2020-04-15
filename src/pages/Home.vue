@@ -1,9 +1,13 @@
 <template>
   <div class="home container-fluid">
     <!--Nasa Apod-->
-    <div class="row"></div>
-    <apods></apods>
-    <photos></photos>
+    <div class="row">
+      <apods></apods>
+    </div>
+    <!--Nasa EPIC-->
+    <div class="row">
+      <photos></photos>
+    </div>
   </div>
 </template>
 
