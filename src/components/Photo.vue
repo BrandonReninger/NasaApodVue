@@ -1,5 +1,5 @@
 <template>
-  <div class="photo col-4">
+  <div class="photo col-4 border">
     <img class="img-fluid" :src="photoData.image" />
     <small>{{photoData.caption}}</small>
   </div>

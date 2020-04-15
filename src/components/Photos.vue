@@ -1,6 +1,6 @@
 <template>
-  <div class="col-12">
-    <photo></photo>
+  <div class="row">
+    <photo v-for="photo in photos" :photoData="photo"></photo>
   </div>
 </template>
 
